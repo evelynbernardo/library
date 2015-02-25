@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  # resources :classifications
- # resources :animals
-#resources :common_names
+resources :items
 root "items#index"
   get 'items/index'
   # The priority is based upon order of creation: first created -> highest priority.
