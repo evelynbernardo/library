@@ -2,7 +2,7 @@
   <% if @item.errors.any? %>
     <div class='errors'>
       <h2>Uh oh, errors!</h2>
-      <% @entry.errors.full_messages.each do |msg| %>
+      <% @item.errors.full_messages.each do |msg| %>
         <p><%= msg %></p>
       <% end %>
     </div>
@@ -14,7 +14,7 @@
   </div>
 <br>
   <div class='field'>
-    <%= f.label :title %>
+    <%= f.label :title, 'Hello' %>
     <%= f.text_field :title %>
   </div>
 <br>
